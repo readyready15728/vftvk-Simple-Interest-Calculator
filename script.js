@@ -1,6 +1,8 @@
+// Computes interest from investment
 function compute() {
     var principal = parseInt(document.getElementById('principal').value);
     
+    // Computation guarded by form validation
     if (principal > 0) {
         var rate = parseFloat(document.getElementById('rate').value);
         var years = parseInt(document.getElementById('years').value);
@@ -14,6 +16,7 @@ function compute() {
     }
 }
 
+// Links the slider and stated interest rate together properly
 function updateRate() {
     var rateVal = document.getElementById('rate').value;
     document.getElementById('rate_val').innerText=rateVal;
